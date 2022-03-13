@@ -52,3 +52,76 @@ let explorer = {
 console.log(explorer);
 console.log(explorer.email);
 console.log(explorer.proyecto);
+
+/* Flujo cocnidcional*/
+let condicion = true;
+if (condicion){
+console.log("Verdad");
+}else{
+console.log("Falso");
+}
+
+//EJEMPLO
+let num = 3;
+if(num == 1){
+    console.log("Numero 1");
+}else if (num == 2){
+    console.log("Numero 2");
+}else if(num == 3){
+    console.log("Numero 3");
+}else if(num == 4){
+    console.log("Numero 4");
+}else{
+    console.log("Numero Desconocido");
+}
+
+
+/* Ciclo condicional */
+console.log("\n********** While ***********\n");
+let numwhile = 0;
+while (numwhile <= 12){
+    console.log(numwhile);
+    numwhile = numwhile + 2;
+}
+console.log("Aqui termina el cilco while ya que el valor : " + numwhile + " es mayor a la condicion 12");
+
+
+
+console.log("\n********** DoWhile ***********\n");
+let contador = 0;
+do{
+    console.log(contador);
+    contador++;
+}while (contador < 3);
+console.log("Fin del ciclo");
+
+
+console.log("\n********** For ***********\n");
+let contadorfor = 0;
+for(contadorfor ; contadorfor <= 10; contadorfor++){ // for (Declaracion; Condicion; incremento de contador) 
+        console.log(contadorfor);
+}
+console.log("Fin del ciclo for :" + contadorfor);
+
+
+console.log("\n********** switch ***********\n");
+let month = 11; // Los casos deben de ser del mismo tipo, ya que la comparacion ESTRICTA
+let season = 'unknow';
+
+switch( month ){
+    case 1: case 2: case 12:
+        season = "Invierno";
+        break;
+    case 3: case 4: case 5:
+        season = "Primavera";
+        break;
+    case 6: case 7: case 8:
+        season = "Verano";
+        break;
+    case 9: case 10: case 11:
+        season = "Otoño";
+        break;
+    default:
+        season = "No existe este mes"
+}
+console.log(season);
