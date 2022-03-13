@@ -125,3 +125,26 @@ switch( month ){
         season = "No existe este mes"
 }
 console.log(season);
+
+
+
+
+console.log("\n********** FUNCIONES ***********\n");
+//hoisting
+miFuncion(10,8); // Paratmetros es lo que reibe la funcion
+
+//Declaracion de funcion
+function miFuncion(a, b){ // Notacion de camello
+    console.log("Suma :"+ (a + b));
+}
+
+function bomba(){
+    console.log("KATAPLUM");
+}
+bomba();
+
+//Otra forma de hacer funciones es la siguiente:
+const restar = (a,b) => {
+    return a - b;
+}
+console.log(restar(5,1));
