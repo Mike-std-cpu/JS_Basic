@@ -1,13 +1,15 @@
 let x = 10; // Es una variable primitiva ya que no tiene  PROPIEDAD NI METODOS
+
 let persona = { // Variable tipo object
-    nombre: 'Miguel',
+    nombre: 'Miguel', // Propiedades: Propiedad
     apellido : ' Andrade',
     edad : 23,
     email : 'hoodloom07@outlook.es',
     telefono : '55-79-40-22-13',
-
+    //Metodos:se asigna la funcion
     nombreCompleto : function(){ /* THIS apuntara a las variables del objeto, refifiendose como un persona.nombre == this.nombre ya que
-                                     ya que no se puede acceder a si mismo por que es una propiedad.*/
+                                    no se puede acceder a si mismo por que es una propiedad.
+                                    Se Utiliza THIS cuando estamos dentro del objeto y queremos usar propiedades de ese mismo objeto*/
        return this.nombre + this.apellido;
     },    
     datosPersonales : function(){
@@ -52,7 +54,7 @@ for (propiedades in persona){
     console.log(persona[propiedades]);
 }
 //Object.values  como un arreglo
-let personaArray = Object.values (persona);
+let personaArray = Object.values (persona); //Creaos una variable array para pasarle el contenido de el bojeto persona como un objeto con Object.values(Objeto)
 console.log(personaArray);
 //JSON
 let personaString = JSON.stringify(persona); //convertir el objeto a una cadena

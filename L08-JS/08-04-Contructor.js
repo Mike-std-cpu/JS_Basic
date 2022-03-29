@@ -2,13 +2,13 @@
  UN CONSTRUCTOR es una funcion especial para objetos
  */
 //CONTRUCTOR tipo persona 
-function Persona (nombre, apellido, email){
+function Persona (nombrep, apellidop, emailp){ // El contructor simpre va la primera letra en  mayusculas
     //this.propiedadObjeto = ParametroFunction;
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.email = email;
+    this.nombre = nombrep;
+    this.apellido = apellidop;
+    this.email = emailp;
     this.nombreCompleto = function (){
-        return this.nombre + " " + this.apellido;
+        return this.nombre + " " + this.apellido; // this va a trabajr con los valores que se trabajen en el momento u objeto
     }
 }
 

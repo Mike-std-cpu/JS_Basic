@@ -5,7 +5,7 @@ let persona3 = { // Variable tipo object
     email : 'hoodloom07@outlook.es',
     telefono : '55-79-40-22-13',
     idioma : 'es_mx',
-    get lang (){
+    get lang (){ 
         return this.idioma.toUpperCase(); // UPEERCASE convierte una cadena a MAYUSCULAS
     },
     set lang( lang ){
@@ -24,4 +24,6 @@ console.log (persona3.lang);
 persona3.lang = 'en';
 //persona.(METODO SET) = (ATRIBUTO A CACHAR)
 console.log (persona3.lang);
-console.log (persona3.idioma)
+console.log (persona3.idioma);
+
+// CADA SET O GET TIENE SU METODO DE UPERCASE para cuando se modifica o solo se cacha.
