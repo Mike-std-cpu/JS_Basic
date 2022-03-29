@@ -6,8 +6,8 @@
     LECCION_05 = Complete
     LECCION_06 = Complete
     LECCION_07 = Complete
-    LECCION_08 = Complete | Repaso: 72, 73, 74, 75, 76.
-    LECCION_09 = Complete | Repaso: 77, 78, 79, 80, 81, 82, 83.
+    LECCION_08 = Complete | Repaso: Complete
+    LECCION_09 = Complete | Repaso: 79, 80, 81, 82, 83.
     LECCION_10 = Complete | Repaso: 84, 85, 86, 87, 88
     LECCION_11 = Complete
     LECCION_12 = Complete

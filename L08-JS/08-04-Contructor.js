@@ -28,7 +28,7 @@ console.log(io.nombreCompleto());
 console.log(mama.nombreCompleto());
 
 //PROTOTYPE
-Persona.prototype.tel = '55-22-33-11'; // Se agrega la priopuiedad a todos los objetos que se hagan
+Persona.prototype.tel = '55-22-33-11'; // Se agrega la priopiedad a todos los objetos que se hagan Ya sean atributos o metodos
 console.log(io.tel);
 console.log(mama.tel);
 //modificar
