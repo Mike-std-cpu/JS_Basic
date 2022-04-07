@@ -23,14 +23,19 @@ class Persona {
      }
      //Sobre escribiendo el metodo de la clase padre
      toSring(){
-         //se aplica aqui polimorfismo (Multiples formas en tiempo de ejecucion)
+         //se aplica aqui polimorfismo (Multiples formas en tiempo de ejecucion) y dependera de los objetos
         return this.nombreCompleto();
+    /**
+     * to String nos permitira imprimir informacion del estado de nuestro Objeto, es decir...
+     * Nos ayudara a saber los valores actuales de los atributos de los objetos
+     * Es una buena practica.
+     */
      }
 }
 
 class Empleado extends Persona { // extends va hacer herencia de la clase que se defina
     constructor(nombre, apellido, departamento){
-        super(nombre, apellido);// llamamos el cosntructo de la clase padre
+        super(nombre, apellido);// SUPER es una palabra reservada para ls llamada el cosntructo de la clase padre
         this._departamento = departamento;
     }
     get departamento (){
@@ -40,9 +45,10 @@ class Empleado extends Persona { // extends va hacer herencia de la clase que se
         this._departamento = departamento;
     }
     //Sobre Escritura con .super
+    //Sobre escribira el comportamineto del metodo padre en la clase hija
     nombreCompleto(){
       //return this._nombre + " " + this._apellido + " | " + this._departamento;
-        return super.nombreCompleto() + " | " + this._departamento;
+        return super.nombreCompleto() + " | " + this._departamento;// Super para llamar la funcion de la clase padre
     }
 }
 
