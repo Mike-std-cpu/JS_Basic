@@ -68,14 +68,9 @@ console.log(empleado1.toSring());
 //persona1.saludar(); // No es posible mandar a llamar un metodo STATIC desde ub objeto
 //UN METODO ESTATICO SE ASOCIA CON UNA CLASE pero no con los objetos que se hagan
 
-/**
- * los miembros estáticos de las clases en Programación Orientada a Objetos en general son atributos y 
- * métodos que dependen directamente de una clase, en vez de depender de un objeto en particular.
- */
-
 //SOLO FUNCIONA CON LA CLASE, NO CON OBJETOS
 Persona.saludar(); // Se observa en consola
-Persona.saludar2(persona1);
+Persona.saludar2(persona1);//Se podrsa visualizar desde consola los resultados del objeto que se envio como referencia
 Empleado.saludar2(empleado1);
 
 //atributos static
@@ -86,3 +81,9 @@ console.log(Empleado.contadorObjetosPersona); // CADA QUE SE HACE UNA INSTANCIA 
 //No static
 console.log(persona1.email);
 console.log(Persona.email);
+
+/**
+ * los miembros estáticos de las clases en Programación Orientada a Objetos en general son atributos y 
+ * métodos que dependen directamente de una clase, en vez de depender de un objeto en particular.
+ * Es como una funcion que como parametro podra usar los atributos de un objeto en particular.
+ */
