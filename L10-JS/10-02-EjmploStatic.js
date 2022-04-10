@@ -1,14 +1,14 @@
 class Persona {
 
-    static contadorPersona = 0;
-    static get MAX_OBJ(){
-        return 3;
+    static contadorPersona = 0; //Atributo de nuestra clase
+    static get MAX_OBJ(){ // SOLO PERMITIRA LEER y sera get solo que se obtendra para leer
+        return 3; // MAXIMO DE OBJETOS CREADOS
     }
 
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        if (Persona.contadorPersona < Persona.MAX_OBJ){
+        if (Persona.contadorPersona < Persona.MAX_OBJ){// condicion para que no se pueda crear mas instancias.
         this.idPersona = ++Persona.contadorPersona; //++preincrmeneto
         }else{
             console.log("SE han superado el maximo de instancias posibles");
@@ -66,4 +66,6 @@ console.log(Persona.MAX_OBJ);
 Persona.MAX_OBJ = 10; // Como es un metodo get, solo tendra el valor que se le defina
 console.log(Persona.MAX_OBJ);// no se modifica el restulraod -->
 
-let persona3 = new Persona('Cristhian', 'Martinez'); // Mnadara el mensaje por consola
+let persona3 = new Persona('Cristhian', 'Martinez'); // Mandara el mensaje por consola
+// "Se han superado el maximo de instancias posibles"
+console.log(persona3.toString()); // NO mostrara el ID ->

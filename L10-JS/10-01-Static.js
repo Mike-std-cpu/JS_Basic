@@ -3,10 +3,16 @@ class Persona {
     static contadorObjetosPersona = 0; // ATRIBUTO QUE PERTENECE A LA CLASE
     email = " hoodloom07@outlook.es"; // ATRIBUTO NO STATIC DE OBJETOS
 
+    /**
+     * Al ser NO estatic, todas las instancias pueden heredar esa variable
+     * @param {String} nombre 
+     * @param {String} apellido 
+     */
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.contadorObjetosPersona++; // aumentara cada que se haga una estancia
+        Persona.contadorObjetosPersona++; // aumentara cada que se haga una estancia de la clase
         console.log("SE INCREMENTA CONTADOR: " + Persona.contadorObjetosPersona);
     }
     get nombre(){
@@ -74,8 +80,8 @@ Persona.saludar2(persona1);//Se podrsa visualizar desde consola los resultados d
 Empleado.saludar2(empleado1);
 
 //atributos static
-console.log(persona1.contadorObjetosPersona);// como es de un objeto (Una instancia) no puede acceder a el
-console.log (Persona.contadorObjetosPersona); // como es de la clase, si se puede acceder
+console.log(persona1.contadorObjetosPersona);// como es de un objeto (Una instancia) no puede acceder a el por ello nos sale --> Undefined.
+console.log (Persona.contadorObjetosPersona); // como es de la clase, si se puede acceder.
 console.log(Empleado.contadorObjetosPersona); // CADA QUE SE HACE UNA INSTANCIA UN OBJETO,  SE AUMENA UN NUMERO
 
 //No static
