@@ -49,7 +49,6 @@ console.log(raton1.toString());// podemos ver la primera instancia
 let raton2 = new Raton("Bluetooth", "DELL");
 console.log(raton2.toString()); // ID se incrementea a 2-->
 
-
 /**
  * CLASE TECLADO *****
  */
@@ -76,3 +75,32 @@ let teclado1 = new Teclado("Bluetooth","MSI");
 console.log(teclado1.toString());
 let teclado2 = new Teclado ("USB", "ECER");
 console.log(teclado2.toString(9)); // CMBIA EL ID cada que se instancia la clase o el constructor
+
+/**
+ * CLASE TECLADO *****
+ */
+
+class Monitor {
+    static cotadorMonitores = 0;
+    constructor (marca, tamaño){
+        this._idMonitor = ++Monitor.cotadorMonitores;
+        this._marca = marca;
+        this._tamaño = tamaño;
+    }
+
+    get idMonitor(){
+        return this._idMonitor;
+    }
+
+    toString(){
+        return `ID: ${this._idMonitor}
+        | Tamaño: ${this._tamaño}
+        | Marca: ${this._marca}`;
+    }
+
+}
+//Prueba instanciando las clases.
+let monitor1 = new Monitor("HP", "60");
+console.log(monitor1.toString());
+let monitor2 = new Monitor("Dell", "15");
+console.log(monitor2.toString());
