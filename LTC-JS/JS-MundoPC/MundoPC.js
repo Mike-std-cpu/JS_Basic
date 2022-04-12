@@ -1,3 +1,6 @@
+/**
+ * CLASE DISPOSITIVO ENTRADA *****
+ */
 class DispoitivoEntrada{ //Clase de dispositivos de entrada
     constructor(entrada, marca){ // Constructor para obtener los atributos
         this._entrada = entrada;
@@ -18,6 +21,10 @@ class DispoitivoEntrada{ //Clase de dispositivos de entrada
         this._marca = marca;
     }
 }
+
+/**
+ * CLASE RATON *****
+ */
 
 class Raton extends DispoitivoEntrada{ // Raton heredara las caracteristicas de DE
     static contadorRatones = 0; // Para poder ver la cantidad de instancias
@@ -41,3 +48,31 @@ let raton1 = new Raton("USB","HP")
 console.log(raton1.toString());// podemos ver la primera instancia
 let raton2 = new Raton("Bluetooth", "DELL");
 console.log(raton2.toString()); // ID se incrementea a 2-->
+
+
+/**
+ * CLASE TECLADO *****
+ */
+
+class Teclado extends  DispoitivoEntrada{
+    static contadorTeclado =0;
+
+    constructor (tipoEntrada, marca){
+        super (tipoEntrada, marca);
+        this._idTeclado = ++Teclado.contadorTeclado;
+    }
+    
+    get idTeclado(){
+        return this._idTeclado;
+    }
+    toString(){
+        return `ID: ${this._idTeclado}
+        | Entrada: ${this._entrada}
+        | Marca: ${this._marca}`;
+    }
+}
+
+let teclado1 = new Teclado("Bluetooth","MSI");
+console.log(teclado1.toString());
+let teclado2 = new Teclado ("USB", "ECER");
+console.log(teclado2.toString(9)); // CMBIA EL ID cada que se instancia la clase o el constructor

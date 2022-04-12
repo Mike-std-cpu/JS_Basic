@@ -11,4 +11,4 @@
     LECCION_10 = Complete | Repaso: Complete.
     LECCION_11 = Complete
     LECCION_12 = Complete
-    LECCION_13 = 100, 101, 102, 103, 104
+    LECCION_13 = 102, 103, 104
