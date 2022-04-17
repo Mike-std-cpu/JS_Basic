@@ -104,3 +104,34 @@ let monitor1 = new Monitor("HP", "60");
 console.log(monitor1.toString());
 let monitor2 = new Monitor("Dell", "15");
 console.log(monitor2.toString());
+
+/**
+ * CLASE TECLADO *****
+ */
+
+class Computadora{
+    static contadorComputadoras = 0;
+
+    constructor(nombre, monitor, raton, teclado){
+        this.idComputadora = ++Computadora.contadorComputadoras;
+        this._nombre = nombre;
+        this._monitor = monitor;
+        this._raton = raton;
+        this._teclado = teclado; // Agregamos el valor a los valores con guion bajo para que se puedan agregar.
+    }
+    toString(){
+        return `ID: ${this._idComputadora}
+        | Nombre: ${this._nombre}
+        | Monitor: ${this._monitor}
+        | Raton: ${this._raton}
+        | Teclado: ${this._teclado}`;
+    }
+}
+
+let pc1 = new Computadora("HP",monitor1,raton1,teclado1);
+//Aqui ya usamos los datos de los bojetos que hemos hecho anteriormente, los pasmaos como referencia de la instancia de PC
+console.log(pc1.toString());
+/*
+EL metodo toString se llamada de manera automatica de la sigueitne manera
+-console.log(`${pc1}`)
+*/
