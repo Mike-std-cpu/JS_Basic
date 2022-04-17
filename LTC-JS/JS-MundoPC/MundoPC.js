@@ -135,3 +135,43 @@ console.log(pc1.toString());
 EL metodo toString se llamada de manera automatica de la sigueitne manera
 -console.log(`${pc1}`)
 */
+let pc2 = new Computadora("DELL",monitor1,raton2,teclado2);
+console.log(`${pc2}`);
+
+/**
+ * CLASE ORDEN *****
+ */
+
+class Orden{
+    static contadorOrdenes =0;
+
+    constructor(){
+        this._idOrden = ++Orden.contadorOrdenes;
+        this._computadoras = [];
+    }
+    get idOrden(){
+        return this.idOrden
+    }
+    agregarPC(computadora){
+        this._computadoras.push(computadora); // Se agregara la referencia con el metodo push al arreglo
+    }
+    mostrarOrden(){
+        let computadorasOrden = "";
+        for(let computadora of this._computadoras){
+            computadorasOrden += `\n${computadora}`; /*se usa esta sintaxis como ya se menciono, se ejecutara -
+                                                      - el metodo toSring() solo*/
+        }
+
+        console.log(`Orden: ${this._idOrden}, Computadoras: ${computadorasOrden}`);
+    }
+}
+
+let orden1 = new Orden();
+orden1.agregarPC(pc1);
+orden1.agregarPC(pc2);
+orden1.agregarPC(pc1);//No importa que se repitan pc's
+orden1.mostrarOrden();
+
+let orden2 = new Orden();
+orden2.agregarPC(pc2);
+orden2.mostrarOrden();
