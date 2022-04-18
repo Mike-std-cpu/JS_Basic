@@ -2,7 +2,7 @@
 
 Basicamente la sobre escritura en JS o en los lenguajes de programación dentro de POO **Programacion Orientada a objetos**, es casi la misma terminologia que la herencia.
 
-###Ejemplo:
+### Ejemplo:
 - Se tiene una madre que tiene la caracteristica de canto, dado por hecho lo anterior, su hija tendra las miscas cualidad, pero de manera diferente _De una manera propia_.
 
 Es aqui donde podemos tener el ejemplo ya dentro en materia:
