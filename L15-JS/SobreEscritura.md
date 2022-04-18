@@ -29,6 +29,16 @@ Tenemos el siguiente diagrama:
 
  En el script `L15-JS` se podra visualziar el ejemplo practico.
 
+ _Es clave mencionar que si se desea utilizar el metodo de la clase padre, se necesita usar la palabra `super`_
+
+ ````javascript
+
+     obtenerDetalles(){
+        return `Gerente: ${super.obtenerDetalles()} Departamento: ${this._departamento}`;
+    }
+
+ ````
+
  ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)
