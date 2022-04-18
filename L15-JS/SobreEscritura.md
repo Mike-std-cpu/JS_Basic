@@ -12,9 +12,9 @@ Tenemos el siguiente diagrama:
  ```mermaid
  classDiagram
  class Empleado
- Repo : +name
- Repo : +sueldo
- Repo : +obtenerDetalles()
+ Empleado : +name
+ Empleado : +sueldo
+ Empleado : +obtenerDetalles()
  ```
 
  Aqui heredara de la clase **Gerente.**
@@ -22,7 +22,7 @@ Tenemos el siguiente diagrama:
  ```mermaid
  classDiagram
  class Gerente
- Repo : +obtenerDetalles()
+ Gerente : +obtenerDetalles()
  ```
  
  **_Entonces tenemos como sobre escritura la herencia de metodos pero con su propio comportamiento_**.
