@@ -12,8 +12,8 @@ Tenemos el siguiente diagrama:
  ```mermaid
  classDiagram
  class Empleado
- Repo : +name:String
- Repo : +sueldo:Number
+ Repo : +name
+ Repo : +sueldo
  Repo : +obtenerDetalles()
  ```
 
