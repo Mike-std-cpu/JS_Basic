@@ -27,6 +27,23 @@ La sentencia _**finally**_ puede ser agregada opciónalmente y esta se ejecutara
 
 El uso de manejo de expecines es muy usado y fundamental dentro del desarrollo de proyectos en JS, es por eso que se debe de tener en cuenta cuando se esta programando para tener buenas practicas.
 
+# Throw.
+ Basicamente un `throw `es lanzar una excepcion definida por el usuario mismo.
+ 
+ ````javascript
+let result = 'cinco';
+
+try{
+    if(isNaN(result)) throw 'No es un numero';
+}catch(error){
+    console.log(error);
+}finally{
+    console.log('Termina revision de error');
+}
+````
+
+Podemos observar que le podemos dar valor al error que nosotros definamos, puede ser diferentes tipos de errores con el uso de `throw`.
+
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)

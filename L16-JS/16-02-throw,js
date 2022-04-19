@@ -1,0 +1,16 @@
+'use strict'
+let result = 'cinco';
+
+try{
+    if(isNaN(result)) throw 'No es un numero';
+    else if (result === '') throw 'Es una cadena vacia';
+    else if (result >= 0) throw 'Valor positivo';
+    else if (result < 0) throw 'Valor negativo';
+}catch(error){
+    console.log(error);
+    //console.log(error.name);
+    //console.log(error.mesagge);
+}finally{
+    console.log('Termina revision de error');
+}
+//MAYOR INFORMACION EN TrtCatchFinally.md
