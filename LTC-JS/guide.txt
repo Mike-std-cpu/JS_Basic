@@ -13,4 +13,5 @@
     LECCION_12 = Complete.
     LECCION_13 = Complete.
     LECCION_14 = Complete.
-    LECCION_15 = 109.
+    LECCION_15 = Complete.
+    LECCION_16 = 110, 111.
