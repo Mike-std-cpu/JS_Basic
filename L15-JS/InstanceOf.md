@@ -1,3 +1,4 @@
+# Instance Of.
 Es hora de usar el termino de *IntanceOf* que segun la terminologia nos ayudara a indentificar la clase de la instancia que estemos detectando con _instanceof_.
 
 Podemos ver en el ejemplo la sintaxis:

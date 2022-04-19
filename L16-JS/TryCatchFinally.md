@@ -1,3 +1,4 @@
+# Try Catch
 Es ahora de hablar de las expeciones en JavaScript, es un tema de suma importnacia que nos ayuda a ejecutar codigo cuando se detecta algun tipo de error.Buscando en la terminologia encontramos la siguiente definicion:
 
 > _La sentencia try..catch..finally especifica un bloque de código para probar junto con una respuesta en caso de que ocurra un error. La sentencia try puede contener uno o más bloques try y termina con al menos una cláusula catch o finally._

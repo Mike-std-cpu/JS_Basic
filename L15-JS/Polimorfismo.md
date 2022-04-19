@@ -1,3 +1,4 @@
+# Polimorfismo.
 De igualmanera iremos manejando las clases ocupadas en **Sobre Escritura** usando asi, las metodos `obtenerDetalles();` tanto de la clase _Empleado_ como la de _Gerente_.
 
 Tenemos que definir el significado de **_Polimorfimso_**:
