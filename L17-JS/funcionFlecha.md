@@ -9,7 +9,7 @@ function miFuncion(){
 - _Aqui podemos notar que la sintaxis es de una función basica con `function` usamos **{ }** y despues el bloque de codigo que deseamos ejecutar cuando mandemos a llamar la funcion posteriormente._
 
 ## Funciones anonimas.
-Antes de pasar a las funciones flehca, es clave mencionar que existe otra forma de declarar funcciones, tales como las anoniamas, aqui **NO** usamos le agregamos nombre a la funcion, solo declaramos la pr `function ()` para despues agregarla a una variable con nombre, aqui esta el ejemplo:
+Antes de pasar a las funciones flehca, es clave mencionar que existe otra forma de declarar funcciones, tales como las anoniamas, aqui le agregamos nombre a la funcion, solo declaramos la pr `function ()` para despues agregarla a una variable con nombre, aqui esta el ejemplo:
 ````javascript
 let miOtraFuncion = function(){
     console.log("Saludos desde mi funcion 2");
@@ -35,9 +35,9 @@ let miFuncionFlecha = () => {
     console.log("Hola desde mi funcion flecha.")
 }
 ````
-Los **( )** se usan por si tenddra algun tipo de parametro que reicibi y se usan **=>** tal cual su nobre lo dice, una _flecha_.
+Los **( )** se usan por si tenddra algun tipo de parametro que reicibira y se usan **=>** tal cual su nobre lo dice, una _flecha_.
 
-En el script `flecha.js se encuentra un ejemplo` y se podra interactuar con el.
+En el script `flecha.js` se encuentra un ejemplo y se podra interactuar con el.
 
 --- 
 
