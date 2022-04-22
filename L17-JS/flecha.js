@@ -23,3 +23,10 @@ let miFuncionFlecha = () => {
 
   miFuncionFlecha();
 
+  // ********************************
+
+  // Funciones flecha de una linea.
+
+  const miFuncionFlecha2 = () => console.log("Saludos desde mi fucion flecha2");
+miFuncionFlecha2();
+// cambios

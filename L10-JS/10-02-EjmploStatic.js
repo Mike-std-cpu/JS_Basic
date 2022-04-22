@@ -69,3 +69,4 @@ console.log(Persona.MAX_OBJ);// no se modifica el restulraod -->
 let persona3 = new Persona('Cristhian', 'Martinez'); // Mandara el mensaje por consola
 // "Se han superado el maximo de instancias posibles"
 console.log(persona3.toString()); // NO mostrara el ID ->
+console.log(persona3.toString());
