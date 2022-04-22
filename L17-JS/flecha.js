@@ -26,7 +26,15 @@ let miFuncionFlecha = () => {
   // ********************************
 
   // Funciones flecha de una linea.
+  const miFuncionFlecha2 = () => console.log("Saludos desde mi fucion flecha2");  
+  miFuncionFlecha2();
 
-  const miFuncionFlecha2 = () => console.log("Saludos desde mi fucion flecha2");
-miFuncionFlecha2();
-// cambios
+  const saludar = () => 'Saludos desde mi funcion flecha | oneLine';
+  console.log(saludar());
+
+  const regresaObjeto = () => ({name: 'Miguel', lastname: 'Andrade', age: 25 }); 
+  //Se debe de manejar entre parentesis por que se cofundira por la sintaxis {}
+  console.log(regresaObjeto());
+
+  const funcionParametro = (massage) => {console.log(massage)};
+  funcionParametro('Soy un parametro')
