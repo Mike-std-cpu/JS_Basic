@@ -31,7 +31,30 @@ Posterior a esto, se declara otra función donde pedira por teclado el nombre y 
 
 El ejemplo anterior es una callback sincrónica, ya que se ejecuta inmediatamente.
 
-Sin embargo, tenga en cuenta que las callbacks a menudo se utilizan para continuar con la ejecución del código después de que se haya completado una operación a sincrónica.
+Sin embargo, tenga en cuenta que las callbacks a menudo se utilizan para continuar con la ejecución del código después de que se haya completado una operación asincrónica.
+
+## Procesos Sincronos y Asincronos.
+En este tipo de funciónes llevan en si los terminos de procesos sincronos, que son basicamante *Proceso que se iran ejecutando  linea por linea*, es como un tipo de orden de declaración liena a la vez.
+
+En funciónes callBack no siguen este tipos de procesos puesto que se usan funciónes, variables o algun tipo de componente antes, despues de su declración o uso.
+
+## SetTimeOut
+
+Este proceso nos ayuda a realizar cierta acción depues de determinado tiempo declarnado el tiempo en *milisegundos*. A continuación se mostrara el ejemplo:
+
+````javascript
+    function miFuncionCallBack(){
+        console.log("Saludo Asincrono despues de 3 segundos");
+    }
+    setTimeout(miFuncionCallBack,3000) //El tiempo se establece en milisegundos.
+
+    //Se puede mandar la función directamente al SetTimeOut
+    setTimeout(function (){console.log("Saludos despues de 5 segundos")}, 5000);
+
+    //Funciones flecha
+    setTimeout(() => {console.log("Saludos despues de 7 segundos")}, 7000);
+
+````
 
 --- 
 
