@@ -22,3 +22,18 @@ function sumar(num1, num2, imprimir){// calback cuando mandamos a llamar la func
 }
 
 sumar(5,3,imprimir);
+
+// **********************************************************************************************************************
+
+//Llamadas asincronas con uso de SetTimeout
+
+    function miFuncionCallBack(){
+        console.log("Saludo Asincrono despues de 3 segundos");
+    }
+    setTimeout(miFuncionCallBack,3000) //El tiempo se establece en milisegundos.
+
+    //Se puede mandar la función directamente al SetTimeOut
+    setTimeout(function (){console.log("Saludos despues de 5 segundos")}, 5000);
+
+    //Funciones flecha
+    setTimeout(() => {console.log("Saludos despues de 7 segundos")}, 7000);
