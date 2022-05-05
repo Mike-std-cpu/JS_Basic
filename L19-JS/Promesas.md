@@ -33,6 +33,22 @@ promesa.then(
 Si la condicion del `if` se cumple, pasa como parametro resolver a la variable `valor` imprimiendo su contenido.
 En dado caso no cumpla,entrara al error y de igual manera imprimira el contenido.
 
+## Async y Await
+
+Tenemos claro que el uso de promesas son factores que pueden ayudar a diferntes cosas como las declaraciones, a contunuacón mostraremos ejemplo de esto, podemos facilitar el codigo y el entendimiento con esto:
+
+````javascript
+async function otraFuncionPromesaAwait(){
+    let laPromesa = new Promise(resolver => {
+        resolver('Promesa con await');
+    });
+
+    console.log(await laPromesa);
+}
+
+otraFuncionPromesaAwait();
+````
+> Un punto importnate e que el uso de `await` solo se puede usar dentro de una función declarada con async.
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)
