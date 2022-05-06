@@ -17,4 +17,5 @@
     LECCION_16 = Complete.
     LECCION_17 = Complete.
     LECCION_18 = Complete.
-    LECCION_19 = 121.
+    LECCION_19 = Complete.
+    LECCION_20 = 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135.
