@@ -25,3 +25,15 @@ async function otraFuncionPromesaAwait(){
 }
 
 otraFuncionPromesaAwait();
+
+//ASYNC con await TimeOut
+
+async function FuncionAwaitTimeOut (){
+    let miPromesa = new Promise (resolver => {
+        setTimeout(() => resolver('Promesa con await con timeOut de 3 seg,'), 3000);
+    })
+
+    console.log(await miPromesa);
+}
+
+FuncionAwaitTimeOut();
