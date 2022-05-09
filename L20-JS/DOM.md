@@ -43,6 +43,15 @@ En este caso, se agregara posterior a la etiqueta `body` para agregar la etiqeut
 > - *_getElementById_* : Como Jacascript concidera todas las etiquetas como *Objetos* obtendemos el objeto de H1.
 > - *_innerHTML_* :Esto ayudara a acceder al contenido de el objeto que obtuvimos con el getElementById pero tambien con innterHTML podemos modificar sus valores.
 
+Aparte del `getElementById` existe infinidad de metodos para extraer la información de nuestro html, este es un listado:
+
+1. *_getElementsByTagName('etiqueta')_* : Este a diferencia del anterior, podemos seleccionar el tipo de etiqueta que buscamos. Puede ser un parrafo `<p>` o un titulo `<h#>`.
+2. *_getElementsByClassName('clase')_* : Este puede identificar por la clase que se le haya nombrado, a todas las etiqeutas que tengan cierta clase, las identificara.
+3. *_querySelectorAll('etiqueta.clase')_* : Se podria denominar una convinación de las 2 anteriores, ya que aqui se le debe de denominar la etiqueta y su clase.
+
+---
+
+🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)

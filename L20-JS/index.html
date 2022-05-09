@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM | L20</title>
+    <style>
+        .azulviolet{
+            color: blueviolet;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
 </head>
 <body>
-    <h1 id = 'cabecero'>Ejemplo DOM con JS | L20</h1>
-    <P id = 'parrafo'>Hola 🚀✨</P>
-    <p id = 'parrafo2'>HTML es un lenguaje de etiquetas. 🤯</p>
+    <h1 class = 'azulviolet' id = 'cabecero'>Ejemplo DOM con JS | L20</h1>
+    <P class = 'azulviolet' id = 'parrafo'>Hola 🚀✨</P>
+    <p class = 'azulviolet' id = 'parrafo2'>HTML es un lenguaje de etiquetas. 🤯</p>
     <script>
         let cabecero = document.getElementById("cabecero").innerHTML;
         let hola = document.getElementById("parrafo");
@@ -18,11 +26,13 @@
 
         /////////////////////////////////////////////////////////////
 
-        let parrafos = document.getElementsByTagName('p');
-        console.log(`No. parrafos: ${parrafos.length}`); // 2
-        for(let i=0; i<parrafos.length;i++){
-            console.log(`Parrafo N: ${i} - Contenido ${parrafos[i].innerHTML}`);
-        }1
+        //let elementos = document.getElementsByTagName('p'); //por etiqueta
+        //let elementos = document.getElementsByClassName('azulviolet'); // Por clase
+        let elementos = document.querySelectorAll('p.azulviolet');// Por etiqueta y por clase
+        console.log(`No. elementos: ${elementos.length}`); // 2
+        for (let elemento of elementos){
+            console.log(`Elemento N: ${elemento.innerHTML}`)
+        }
 001    </script>
 </body>
 </html>
