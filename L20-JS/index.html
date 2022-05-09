@@ -9,10 +9,20 @@
 <body>
     <h1 id = 'cabecero'>Ejemplo DOM con JS | L20</h1>
     <P id = 'parrafo'>Hola 🚀✨</P>
+    <p id = 'parrafo2'>HTML es un lenguaje de etiquetas. 🤯</p>
     <script>
         let cabecero = document.getElementById("cabecero").innerHTML;
+        let hola = document.getElementById("parrafo");
         console.log(cabecero)
-        console.log("Saludos desde JS")
-    </script>
+        console.log(hola.innerHTML);
+
+        /////////////////////////////////////////////////////////////
+
+        let parrafos = document.getElementsByTagName('p');
+        console.log(`No. parrafos: ${parrafos.length}`); // 2
+        for(let i=0; i<parrafos.length;i++){
+            console.log(`Parrafo N: ${i} - Contenido ${parrafos[i].innerHTML}`);
+        }1
+001    </script>
 </body>
 </html>

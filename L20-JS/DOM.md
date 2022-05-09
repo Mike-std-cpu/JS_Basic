@@ -41,7 +41,8 @@ En este caso, se agregara posterior a la etiqueta `body` para agregar la etiqeut
 > Lo que hace realmente este código es capturar el contenido de la etiqeuta `h1` con el `id = 'cabecero`, tenemos estos componentes:
 > - _*document*_ : Para poder acceder a los documetnos de nuestro documento HTML.
 > - *_getElementById_* : Como Jacascript concidera todas las etiquetas como *Objetos* obtendemos el objeto de H1.
-> - *_innerHTML_* :Esto ayudara a acceder al contenido de el objeto que obtuvimos con el getElementById.
+> - *_innerHTML_* :Esto ayudara a acceder al contenido de el objeto que obtuvimos con el getElementById pero tambien con innterHTML podemos modificar sus valores.
+
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)
