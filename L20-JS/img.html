@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | L20</title>
+    <style>
+        .azulviolet{
+            color: blueviolet;
+        }
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1 class = 'azulviolet' id = 'cabecero'>Ejemplo DOM con JS | L20</h1>
+    <P class = 'azulviolet' id = 'parrafo'>Hola 🚀✨</P>
+    <p class = 'azulviolet' id = 'parrafo2'>HTML es un lenguaje de etiquetas. 🤯</p>
+    <button onclick="cambio()">Cambio</button>
+    <img  id = 'img' src="http://globalmentoring.com.mx/imagenes/html5.png"/>
+    <script>
+    function cambio(){
+            document.getElementById('cabecero').innerHTML = 'Hola con JavaScript. 🙂🚀'
+            document.getElementById('img').src = 'http://globalmentoring.com.mx/imagenes/javascript.png';
+        }
+</script>
+</body>
+</html>
+
