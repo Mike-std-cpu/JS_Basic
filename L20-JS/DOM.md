@@ -49,9 +49,11 @@ Aparte del `getElementById` existe infinidad de metodos para extraer la informac
 2. *_getElementsByClassName('clase')_* : Este puede identificar por la clase que se le haya nombrado, a todas las etiqeutas que tengan cierta clase, las identificara.
 3. *_querySelectorAll('etiqueta.clase')_* : Se podria denominar una convinación de las 2 anteriores, ya que aqui se le debe de denominar la etiqueta y su clase.
 
----
+Ahora, en el apartado de `document`, podemos seguir utilizando otros metodos:
+   
+1. *_document.write('texto')_* : Aqui podemos rescribir contenido desde la pantalla de HTML, es decir sin la necesidad de escribir etiqeutas en el body. Pero **CUIDADO**, ya que el utilizar este metodo, podemos borrar el  contenido que tuvieramos en un documento en HTML ya antes, sirve para plasmar información.
+2. *_document.forms['NombreFormulario']_* : Aqui podemos acceder a la información o contenido del formulrio, posterior con sus respectivos value.
 
-🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)
