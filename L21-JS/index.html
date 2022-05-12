@@ -13,8 +13,11 @@
     <div id="mostrar"></div>
     <h2 id="cookies"></h2>
     <h3 id="color" onmouseover="blue(this)"" onmouseout="green(this)">Cambio de color 🌚</h3>
-    <br>
-    Nombre: <input type = 'text' onchange="convertir(this)"/>
+    <br><br>
+    Nombre: <input type = 'text' onchange="convertir(this)"/><br>
+    Primer Apellido: <input type="text" onfocus = "cambiarFocu(this)" onblur = "cambiarBlur(this)"/><br>
+    Segudno Apellido: <input type="text" onfocus = "cambiarFocu(this)" onblur = "cambiarBlur(this)"/>
+
     <script>
         function cambiarText(titulo){
             console.log(titulo)
@@ -48,6 +51,17 @@
         //ONMOUSEOUT
         function green(cambioColorb){
             color.style.color = 'Black';
+        }
+
+        //ONFOCUS & ONBLUR
+
+        function cambiarFocu(elementoInput){
+            console.log('Ejecuta focus')
+            elementoInput.style.background = 'Green';
+        }
+        function cambiarBlur(elementoInputs){
+            console.log('Ejecuta blur')
+            elementoInputs.style.background = 'White';
         }
     </script>
     

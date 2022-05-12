@@ -26,7 +26,7 @@ En este caso, como ya comentamos, las etiquetas son **objetos** de tipo html, po
 
 Ahora, al darle click al titulo, se cambiara al que nosotros le demos.
 
-# Onload.
+## Onload.
 Este evento nos audara a que al entrar a la pagina, en su mero arranque, pueda ejecutar algo que nosotros deseamos, en este ejemplo agregamos un `alert`.
 
 ````javascript
@@ -51,7 +51,7 @@ Ahora, ocuparemos el evento onload para mostrar si las 🍪🍪🍪 estan habili
 ````
 Esto hara que despues del alert, dentro del `div` que tiene como id cookies, muestre si las cookies estan habilitadas.
 
-# Onchange.
+## Onchange.
 Este evento hace que una etiqueta de texto sea mdodificada, en el ejemplo hacemos que un `input` sea cambiado a **MAYUSCULAS**.
 
 ````html
@@ -66,6 +66,26 @@ function convertir(nombreInput){
             nombreInput.value = nombreInput.value.toUpperCase();
 ````
 Aqui se observa como captura todo el objeto del `input` como parametro, dentro de la funcion, solo accedemos a su `value` que s lo que necesitamos, lo pasamos a su misma variable pero ahora con la funcion `upperCase()` *Esto hara que convirta el string que tengamos a **MAYUSCULAS** *.
+## OnFocus & OnBlur.
+
+Esyos eventos nos sirven practicmente para dar un formato a un elemetnoq ue tengamos fijado, como por ejemplo un casilla de texto, al momento de dar click y estar en esa casilla focada, se pondra de un color y cuando ya no este en focada volverla a poner del mismo color inicial, para eso usaremos `OnFocus` & `OnBlur`.
+
+````html
+    Primer Apellido: <input type="text" onfocus = "cambiarFocu(this)" onblur = "cambiarBlur(this)"/>
+    Segudno Apellido: <input type="text" onfocus = "cambiarFocu(this)" onblur = "cambiarBlur(this)"/>
+````
+> Es similar que los eventos pasados, donde le agregaremos una función que tendra de parametro los atributos del objeto `input` posteriormente se agrega la funcion en nuestro script.
+
+ ````javascript
+        function cambiarFocu(elementoInput){
+            console.log('Ejecuta focus')
+            elementoInput.style.background = 'Green';
+        }
+        function cambiarBlur(elementoInputs){
+            console.log('Ejecuta blur')
+            elementoInputs.style.background = 'White';
+        }
+````
 
 ---
 
