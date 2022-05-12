@@ -51,6 +51,22 @@ Ahora, ocuparemos el evento onload para mostrar si las 🍪🍪🍪 estan habili
 ````
 Esto hara que despues del alert, dentro del `div` que tiene como id cookies, muestre si las cookies estan habilitadas.
 
+# Onchange.
+Este evento hace que una etiqueta de texto sea mdodificada, en el ejemplo hacemos que un `input` sea cambiado a **MAYUSCULAS**.
+
+````html
+ Nombre: <input type = 'text' onchange="convertir(this)"/>
+````
+> Como podemos observar, tenemos el evento `onchange` que tiene una función que tiene como parametro el termino `this`, que como ya hemos platicado en la lección anterior, este this pacapara todo el objeto de tipo `type` y esto hace que podamos capturar sus atributos.
+
+Ahora bien, declaramos nuestra función `convertir()`.
+
+````javascript
+function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+````
+Aqui se observa como captura todo el objeto del `input` como parametro, dentro de la funcion, solo accedemos a su `value` que s lo que necesitamos, lo pasamos a su misma variable pero ahora con la funcion `upperCase()` *Esto hara que convirta el string que tengamos a **MAYUSCULAS** *.
+
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)

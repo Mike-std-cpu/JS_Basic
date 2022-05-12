@@ -12,7 +12,9 @@
     <h2 id="titulo2">Soy un nuevo titulo 🤯</h2>
     <div id="mostrar"></div>
     <h2 id="cookies"></h2>
+    <h3 id="color" onmouseover="blue(this)"" onmouseout="green(this)">Cambio de color 🌚</h3>
     <br>
+    Nombre: <input type = 'text' onchange="convertir(this)"/>
     <script>
         function cambiarText(titulo){
             console.log(titulo)
@@ -32,6 +34,20 @@
                 texto = 'Las cookies estan inhabilitadas.🍪'
             }
             document.getElementById('cookies').innerHTML = texto;
+        }
+
+        //ONCHANGE
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
+                }
+        
+        //ONMAUSEOVER
+        function blue(cambioColorb){
+            color.style.color = 'Blue';
+        }
+        //ONMOUSEOUT
+        function green(cambioColorb){
+            color.style.color = 'Black';
         }
     </script>
     
