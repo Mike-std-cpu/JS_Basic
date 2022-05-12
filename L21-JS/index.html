@@ -9,11 +9,17 @@
 <body>
 
     <h1 onclick="cambiarText(this)">¡Hola a todos! 🙂✨</h1>
+    <h2 id="titulo2">Soy un nuevo titulo 🤯</h2>
+    <div id="mostrar"></div>
     <br>
     <script>
         function cambiarText(titulo){
             console.log(titulo)
             titulo.innerHTML = 'Soy el nuevo titulo 🚀';
+        }
+        document.getElementById('titulo2').onclick = cambiarTexto2;//callback
+        function cambiarTexto2(){
+            document.getElementById('mostrar').innerHTML = 'Soy el nuevo contenido 🌚';
         }
     </script>
     
