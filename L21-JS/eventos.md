@@ -26,6 +26,31 @@ En este caso, como ya comentamos, las etiquetas son **objetos** de tipo html, po
 
 Ahora, al darle click al titulo, se cambiara al que nosotros le demos.
 
+# Onload.
+Este evento nos audara a que al entrar a la pagina, en su mero arranque, pueda ejecutar algo que nosotros deseamos, en este ejemplo agregamos un `alert`.
+
+````javascript
+        function entrar(){
+            alert('¡Entrando a la pagian web!🚀')
+        }
+````
+El evento `onload` va declarado en el body, manando a llamar una funcion, en este caso llamada `mostrar()`.
+
+Ahora, ocuparemos el evento onload para mostrar si las 🍪🍪🍪 estan habilitadas, se trabajo a esto:
+````javascript
+       function entrar(){
+            alert('¡Entrando a la pagian web!🚀');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = ' Las coockies estan habilitadas.🍪'
+            }else{
+                texto = 'Las cookies estan inhabilitadas.🍪'
+            }
+            document.getElementById('cookies').innerHTML = texto;
+        }
+````
+Esto hara que despues del alert, dentro del `div` que tiene como id cookies, muestre si las cookies estan habilitadas.
+
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)

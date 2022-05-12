@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos | DOM </title>
 </head>
-<body>
+<body onload="entrar()">
 
     <h1 onclick="cambiarText(this)">¡Hola a todos! 🙂✨</h1>
     <h2 id="titulo2">Soy un nuevo titulo 🤯</h2>
     <div id="mostrar"></div>
+    <h2 id="cookies"></h2>
     <br>
     <script>
         function cambiarText(titulo){
@@ -20,6 +21,17 @@
         document.getElementById('titulo2').onclick = cambiarTexto2;//callback
         function cambiarTexto2(){
             document.getElementById('mostrar').innerHTML = 'Soy el nuevo contenido 🌚';
+        }
+        //ONLOAD
+        function entrar(){
+            alert('¡Entrando a la pagian web!🚀');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = ' Las coockies estan habilitadas.🍪'
+            }else{
+                texto = 'Las cookies estan inhabilitadas.🍪'
+            }
+            document.getElementById('cookies').innerHTML = texto;
         }
     </script>
     
