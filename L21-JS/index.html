@@ -18,8 +18,13 @@
     <br><br>
     Nombre: <input type='text' onchange="convertir(this)" /><br>
     Primer Apellido: <input type="text" onfocus="cambiarFocu(this)" onblur="cambiarBlur(this)" /><br>
-    Segudno Apellido: <input type="text" onfocus="cambiarFocu(this)" onblur="cambiarBlur(this)" /><br>
-    Curso: <input  type="text" id="curso" />
+    Segudno Apellido: <input type="text" onfocus="cambiarFocu(this)" onblur="cambiarBlur(this)" /><br><br>
+    Curso: <input  type="text" id="curso" /><br>
+
+    <form id="forma">
+        Lenguaje: <input type="text" id=" lenguaje" /><br>
+        Mision: <input type="text" id="Mision">
+    </form>
 
     <script>
         function cambiarText(titulo) {
@@ -68,15 +73,23 @@
         }
 
         //AddEventListener
-        document.getElementById('curso').addEventListener('focus', cambiarFocus);
+        //document.getElementById('curso').addEventListener('focus', cambiarFocus);
+        //flecha
+        document.getElementById('curso').addEventListener('focus', (evento) => {evento.target.style.background = 'grey'});
         document.getElementById('curso').addEventListener('blur', cambiarBlu);
-        function cambiarFocus(evento){
+        /*function cambiarFocus(evento){
            let componente =  evento.target;
            componente.style.background = 'grey'
-        }
+        }*/
         function cambiarBlu(evento){
             let compoenente = evento.target.style.background = 'White'
         }
+
+        //CAPTURAR DATOS POR FORMULARIO 
+        const forma = document.getElementById('forma');
+        forma.addEventListener('focus', (evento) => { evento.target.style.background = 'Pink'}, true);
+        forma.addEventListener('blur', (evento) => {evento.target.style.background = 'white'}, true);
+
     </script>
 
 </body>
