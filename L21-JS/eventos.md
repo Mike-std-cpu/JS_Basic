@@ -87,6 +87,41 @@ Esyos eventos nos sirven practicmente para dar un formato a un elemetnoq ue teng
         }
 ````
 
+## AddEvenetListener.
+Esta funcion nos ayudara a simplificar mayor mente nuestro código, ya que podemos enlisatr diferntes eventos directamente en nuestro script de JavaScript.
+
+````html
+Nombre: <input type="text" onfocus="cambiarFocu(this)" onblur="cambiarBlur(this)" />
+Curso: <input  type="text" id="curso" />
+
+<script>
+  //NOMBRE **
+  function cambiarFocu(elementoInput) {
+            console.log('Ejecuta focus')
+            elementoInput.style.background = 'Green';
+        }
+        function cambiarBlur(elementoInputs) {
+            console.log('Ejecuta blur')
+            elementoInputs.style.background = 'White';
+        }
+  //CURSO **
+   document.getElementById('curso').addEventListener('focus', cambiarFocus);
+        document.getElementById('curso').addEventListener('blur', cambiarBlu);
+        function cambiarFocus(evento){
+           let componente =  evento.target;
+           componente.style.background = 'grey'
+        }
+        function cambiarBlu(evento){
+            let compoenente = evento.target.style.background = 'White'
+        }
+</script>
+````
+Como podemos ver, en el caso del `input nombre`, teniamo que mandar a ejecutar la función que hiciera el evento, en el caso del `input curso` solo se necesita el `id`.
+Es lave mencionar que al momento de programar la funcion de tipo callback del `AddEventListener`, tenemos como parametro `evento` que hace referencia a la etiqueta de tipo `input` del `id Curso` es decir, tendra el evento que esta ejecutando.
+
+El elemento `target` nos regresara el elemento de tipo `input text`, es como usar le this, que regresaria el objeto input.
+Depues de esto podemos acceder a su propiedad y cambiarle el formato, texto, etc.
+
 ---
 
 🪄 Thanks for watching [@Mike Andrade](https://github.com/Mike-std-cpu)

@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos | DOM </title>
 </head>
+
 <body onload="entrar()">
 
     <h1 onclick="cambiarText(this)">¡Hola a todos! 🙂✨</h1>
     <h2 id="titulo2">Soy un nuevo titulo 🤯</h2>
     <div id="mostrar"></div>
     <h2 id="cookies"></h2>
-    <h3 id="color" onmouseover="blue(this)"" onmouseout="green(this)">Cambio de color 🌚</h3>
+    <h3 id="color" onmouseover="blue(this)"" onmouseout=" green(this)">Cambio de color 🌚</h3>
     <br><br>
-    Nombre: <input type = 'text' onchange="convertir(this)"/><br>
-    Primer Apellido: <input type="text" onfocus = "cambiarFocu(this)" onblur = "cambiarBlur(this)"/><br>
-    Segudno Apellido: <input type="text" onfocus = "cambiarFocu(this)" onblur = "cambiarBlur(this)"/>
+    Nombre: <input type='text' onchange="convertir(this)" /><br>
+    Primer Apellido: <input type="text" onfocus="cambiarFocu(this)" onblur="cambiarBlur(this)" /><br>
+    Segudno Apellido: <input type="text" onfocus="cambiarFocu(this)" onblur="cambiarBlur(this)" /><br>
+    Curso: <input  type="text" id="curso" />
 
     <script>
-        function cambiarText(titulo){
+        function cambiarText(titulo) {
             console.log(titulo)
             titulo.innerHTML = 'Soy el nuevo titulo 🚀';
         }
         document.getElementById('titulo2').onclick = cambiarTexto2;//callback
-        function cambiarTexto2(){
+        function cambiarTexto2() {
             document.getElementById('mostrar').innerHTML = 'Soy el nuevo contenido 🌚';
         }
         //ONLOAD
-        function entrar(){
+        function entrar() {
             alert('¡Entrando a la pagian web!🚀');
             let texto = '';
-            if(navigator.cookieEnabled){
+            if (navigator.cookieEnabled) {
                 texto = ' Las coockies estan habilitadas.🍪'
-            }else{
+            } else {
                 texto = 'Las cookies estan inhabilitadas.🍪'
             }
             document.getElementById('cookies').innerHTML = texto;
         }
 
         //ONCHANGE
-        function convertir(nombreInput){
+        function convertir(nombreInput) {
             nombreInput.value = nombreInput.value.toUpperCase();
-                }
-        
+        }
+
         //ONMAUSEOVER
-        function blue(cambioColorb){
+        function blue(cambioColorb) {
             color.style.color = 'Blue';
         }
         //ONMOUSEOUT
-        function green(cambioColorb){
+        function green(cambioColorb) {
             color.style.color = 'Black';
         }
 
         //ONFOCUS & ONBLUR
 
-        function cambiarFocu(elementoInput){
+        function cambiarFocu(elementoInput) {
             console.log('Ejecuta focus')
             elementoInput.style.background = 'Green';
         }
-        function cambiarBlur(elementoInputs){
+        function cambiarBlur(elementoInputs) {
             console.log('Ejecuta blur')
             elementoInputs.style.background = 'White';
         }
+
+        //AddEventListener
+        document.getElementById('curso').addEventListener('focus', cambiarFocus);
+        document.getElementById('curso').addEventListener('blur', cambiarBlu);
+        function cambiarFocus(evento){
+           let componente =  evento.target;
+           componente.style.background = 'grey'
+        }
+        function cambiarBlu(evento){
+            let compoenente = evento.target.style.background = 'White'
+        }
     </script>
-    
+
 </body>
+
 </html>
