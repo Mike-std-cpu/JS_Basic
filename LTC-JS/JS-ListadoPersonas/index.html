@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Listado de Personas.</title>
     <link href="./css/style.css" rel="stylesheet">
 </head>
+
 <body onload="showPersonas()">
     <div class="contenedor" id="cabecero">
         <h1> Lista de personas 🙍🙍‍♀️</h1>
@@ -14,11 +16,24 @@
     <div class="contenedor">
         <div class="elemento">
             <ul id="personas">
-                
+
             </ul>
         </div>
     </div>
+
+    <div class="contenedor">
+        <div style="text-align: center ;">
+            <button style="cursor: pointer;" onclick="agregarPerson()">+</button>
+        </div>
+        <form id='forma'>
+            <input type="text" placeholder="Name" id="name"/>
+            <input type="text" placeholder="LastName" id="lastName"/>
+        </form>
+    </div>
+
+    
     <script src="./app/persona.js"></script>
     <script src="./app/app.js"></script>
 </body>
+
 </html>
