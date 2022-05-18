@@ -1,0 +1,26 @@
+#reloj{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60px;
+    text-shadow: 0px 0px 2px #333;
+    color: white;
+    
+}   
+
+.reloj-contenedor{
+    background-color: rgb(12, 167, 206);
+    padding: 25px; /*espacio en toda la caja con un relleno de 25px*/
+    max-width: 350px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 0 auto; /*margin: [sup & inf] [izq & der]*/
+    margin-top: 10%;
+}
+
+#fecha{
+    letter-spacing:  10px; /*separacion entre letras*/
+    font-size: 15px;
+}
+
+.animar{
+    border: rgb(0, 0, 0) 2px solid;
+}
