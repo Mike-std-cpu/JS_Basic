@@ -22,5 +22,6 @@
     LECCION_21 = Complete.
     LECCION_22 = Complete.
     LECCION_23 = Complete.
-    LECCION_24 = 155, 156, 157, 158, 159.
+    LECCION_24 = Complete.
+    LECCION_25 = 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176.
 
