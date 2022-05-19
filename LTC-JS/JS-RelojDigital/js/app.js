@@ -5,8 +5,8 @@ const mostrarTime = () =>{
     let seg = formatoDigitos(fecha.getSeconds());
     document.getElementById('hora').innerHTML = `${hr}:${min}:${seg}`;
 
-    const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-    const dias = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+    const meses = ['Ene.', 'Feb.', 'Mar.', 'Abr.', 'May.', 'Jun.', 'Jul.', 'Ago.', 'Sep.', 'Oct.', 'Nov.', 'Dic.'];
+    const dias = ['Dom.', 'Lun.', 'Mar.', 'Mie.', 'Jue.', 'Vie.', 'Sab.'];
     let diasWeek = dias[fecha.getDay()];
     let dia = fecha.getDay();
     let monthYear = meses[fecha.getMonth()];
