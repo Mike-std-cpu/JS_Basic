@@ -10,7 +10,7 @@ const mostrarTime = () =>{
     let diasWeek = dias[fecha.getDay()];
     let dia = fecha.getDay();
     let monthYear = meses[fecha.getMonth()];
-    let fechaTexto = `${diasWeek}, ${dia} de ${monthYear}`;
+    let fechaTexto = `${diasWeek} ${dia} de ${monthYear}`;
     document.getElementById('fecha').innerHTML = fechaTexto;
     //Segun el numero que regrese del dia de la semana, sera la posicion del arreglo antes declarado
     document.getElementById('contenedor').classList.toggle('animar');
