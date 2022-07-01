@@ -7,25 +7,25 @@
     <title>Aplicación Presupuesto</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body>
+<body onload="cargarapp()">
     <div class="cabecero">
         <div class="presupuesto">
             <div class="presupuesto_titulo">
                 Presupuesto Disponible.
             </div>
-            <div class="presupuesto_valor">+ 2.000</div>
+            <div class="presupuesto_valor" id="presupuesto">+ 2.000</div>
             <div class="presupuesto_ingreso limpiarEstilos">
                 <div class="presupuesto_ingreso--texto">Ingresos</div>
                 <div class="derecha">
-                    <div class="presupuesto_ingreso--valor">+ $4,000</div>
+                    <div class="presupuesto_ingreso--valor"  id="ingresos">+ $4,000</div>
                     <div class="presupuesto_ingreso--porcentaje">50%</div>
                 </div>
             </div>
             <div class="presupuesto_egreso limpiarEstilos">
                 <div class="presupuesto_egreso--texto">Egresos</div>
                 <div class="derecha limpiarEstilos">
-                    <div class="presupuesto_egreso--valor">- $1,000</div>
-                    <div class="presupuesto_egreso--porcentaje">45%</div>
+                    <div class="presupuesto_egreso--valor" id="egresos">- $1,000</div>
+                    <div class="presupuesto_egreso--porcentaje" id="porcentaje">45%</div>
                 </div>
             </div>
         </div>
