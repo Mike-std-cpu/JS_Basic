@@ -120,3 +120,65 @@ function demo (x,y){
     return x + y;
 }
 ````
+
+## Arreglos.
+
+En versiones modernas de javaScript, los arreglos poseen una serie de métodos que nos permiten realizar operaciones para, recorrerlos, inspeccionarlos, o modificarlos.
+
+Estas operaciones se introducen en la revisión de 2009 del lenguaje, conocida como ES5. ES5 es una de las revisiones más importantes que se han hecho al lenguaje, en parte por la introducción de estas operaciones.
+
+Lo que tienen en común las operaciones `forEach`, `map`, `reduce`, `filter` y `find`, es que **son métodos que puedes usar en cualquiera arreglo, y que operan a través de funciones que enviamos como argumento para estos métodos, la sintaxis la iremos destacando en vídeos individuales para cada operación.**
+
+Este tipo de trabajo adopta prácticas del paradigma de programación funcional, en el que la mayoría del código se estructura a través del uso de funciones.
+
+El uso de las operaciones que verás en los próximos temas normalmente reduce la complejidad y lo verboso del código, es decir, lo hace más sencillo de comprender y reduce la cantidad de líneas que debes escribir para realizar una operación.
+
+Es importante aclarar que un bloque de código no es mejor cuando es más pequeño que otro, cuando programamos debemos buscar que el código sea comprensible, no corto. Para evaluar este aspecto veamos las siguientes operaciones, ambas realizan lo mismo utilizando diferentes enfoques:
+
+````javascript
+let lenguajes = ["java", "C++", "Elixir", "Java"];
+for(let i = 0;i < lenguajes.length; i++){
+   let element = lenguajes[i];
+   console.log(element);
+}
+
+lenguajes.forEach(function(lenguaje){ 
+    console.log(lenguaje) 
+    });
+````
+> En este escenario, además de que usar un método del `lenguajes` hace el código más corto, e incluso lo puede resumir en una sola línea, también es más expresivo, forEach nos da un indicio de que hace el código, para cada uno de los elementos.
+
+1. ForEach();
+2. Map();
+3. Filter();
+4. IndexOf();
+5. includes();
+6. find();
+7. findIndex();
+8. some();
+
+## Arreglo iterables
+
+Decimos que un arreglo es iterable cuando se puede separar las partes que lo conforman, en este caso un arreglo iene varios componentes que lo conforman.
+
+````javascript
+    // spread syntax (...)
+    let arreglo = [1, 2, 3];
+    console.log(arreglo); //Normal
+    console.log(...arreglo); // Iterado
+    /*
+    normal: [1, 2, 3]
+    iterado:
+    1
+    2
+    3
+    */
+
+   // Rest parameters
+   function demo (...arr){
+    console.log(arr);
+   }
+
+   demo(10, 2); // Unificar : [10, 2]
+````
+
