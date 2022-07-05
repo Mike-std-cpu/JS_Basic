@@ -215,3 +215,21 @@ let curso = {
     bloques: ["Introduccio", "Funcionalidad"];
 }
 ````
+
+## TypeScript
+
+Esta escrito con JavaScript, pero  **No es lo mismo**, type script es basado en JS y soporta varias versiones de JS ya que de TJ pasa a codigo de JS puro.
+
+Es hora de hablar de ECMAScript 6, que basicamente cuando hablamos de *ECMAScript*, nos referimos al estándar que ya va por la versión ES6 y  determina cómo emplear el lenguaje Javascript, **que permite a los fabricantes de software desarrollar las herramientas adecuada para interpretarlo correctamente.**
+
+Hoy en día, existen múltiples plataformas que interpretan y procesan Javascript, como por ejemplo NodeJS o los navegadores web. También es utilizado para el desarrollo de aplicaciones de diferentes sistemas operativos. Es el estándar ECMAScript el que marca cómo deberá ser interpretado el lenguaje en cada una de estas tecnologías.
+
+Hablando de nuevo de **TypeScript**, esta por ensima de estas especificaciones, es decir que mejora o adapta a una mejor manera a TypeScript para un mejor manejo ya sea de variables, clases, funciones, POO etc. Es clave mencionar que TypeScript es creado por **Microsoft** y es uno de los mejores lenguajes.
+
+![TypeScript](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.sitestack.cn%2Fprojects%2FTypeScript-4.0-zh%2F5ee6aac714faa7739f559fbea12b3114.jpeg&f=1&nofb=1)
+
+> Una de las ventajas de TS es la deteccion rapida de errores en el codeo y no en la ejecuion, lectura de codigo mas claro y facilitan el trabajo de grandes escalas.
+
+````
+npm install -g typescript
+````
