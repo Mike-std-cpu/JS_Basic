@@ -157,6 +157,8 @@ lenguajes.forEach(function(lenguaje){
 7. findIndex();
 8. some();
 
+> Todos estos tipos de fucniones que tiene los arreglos, son mas utiles mediante más las uilizamos, de igual manera se pueden usar de manera separada. Como se ha dicho anteriormente, se  puede llegar al mismo resultado de diferentes caminos.
+
 ## Arreglo iterables
 
 Decimos que un arreglo es iterable cuando se puede separar las partes que lo conforman, en este caso un arreglo iene varios componentes que lo conforman.
