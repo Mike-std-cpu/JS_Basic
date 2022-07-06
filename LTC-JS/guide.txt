@@ -24,4 +24,4 @@
     LECCION_23 = Complete.
     LECCION_24 = Complete.
     LECCION_25 = 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176. | JS
-    LECCION_36 = 242, 243, 244, 245, 246, 247 | TS
+    LECCION_36 = 243, 244, 245, 246, 247 | TS
