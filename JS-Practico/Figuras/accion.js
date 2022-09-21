@@ -1,22 +1,33 @@
 console.log("Prueba de ejecucion en node 🌚");
+// Refactorizacion a funciones
+
+function perimetroCuadrado(ladoCuadrado){
+    const periCuad = ladoCuadrado * 4;
+    return periCuad;
+}
+
+function perimetroTriangulo(ladoTriangulo){
+    const peritri = ladoTriangulo * 3;
+    return peritri;
+}
+
+function areaCuadrado(ladoCuadrado){
+    const areaCuad = ladoCuadrado * ladoCuadrado;
+    return areaCuad;
+}
+
+let areaTriangulo = (baseTriangulo, alturaTriangulo)=>{
+    const areaTri = (baseTriangulo * alturaTriangulo) / 2;
+    return areaTri;
+}
+
 
 console.group("Cuadrado");
-const ladoCuadrado = 5;
-const perimetroCuad = ladoCuadrado * 4;
-const areaCuad = ladoCuadrado * ladoCuadrado;
-console.log(`CUADRADO | Lado: ${ladoCuadrado}}cm`);
-console.log(`Perimetro del cuadrado: ${perimetroCuad}cm`);
-console.log(`Area del cuadrado: ${areaCuad}cm2`);
+console.log(`El area del cuadrado es de: ${areaCuadrado(10)}`);
+console.log(`El perimetro del cuadrado es de: ${perimetroCuadrado(10)}`);
 console.groupEnd();
 
 console.group("Triangulo");
-const baseTri = 10;
-const ladoTri = 6;
-const alturaTri = 5.5;
-const perimetroTri = baseTri + ladoTri + ladoTri;
-const areaTri = (baseTri * alturaTri) / 2
-console.log(`TRIANGULO | Base : ${baseTri}cm & lado: ${ladoTri}cm & Altura: ${alturaTri}`);
-console.log(`Perimetro del Triangulo : ${perimetroTri}cm`);
-console.log(`Area del Triangulo: ${areaTri}cm2`);
-
+console.log(`El area del triangulo es de: ${areaTriangulo(10,15)}`);
+console.log(`El perimetro del triangulo es de: ${perimetroTriangulo(10)}`);
 console.groupEnd();
