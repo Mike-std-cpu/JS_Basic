@@ -7,12 +7,37 @@
     <title>Figuras geometricas</title>
 </head>
 <body>
-    <h1> 🟥 Figuras geometricas </h1>
+    <header>
+        <h1> 🟥 Figuras geometricas </h1>
+        <p>En este scrip basico podemos calcular el area de perimetro de Triangulo y cuadrados.</p>
+    </header>
 
-
-
-
+    <section>
+        <h2> Calcula y perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="inputCuadrado">
+               Ingresa cuanto miden los lados de tu cuadrado.
+            </label>
+            <input type="number" id="inputCuadrado"> 
+            <button type="button" onclick="calcularareaCuadrado()">Calcular el Area</button>
+            <button type="button"onclick="calculperimetroCuadrado()">Calcular el Perimetro</button>
+        </form>
+        <form>
+            <label for="inputTriangulo">
+               Ingresa la base, altura y lado de tu triangulo:
+            </label>
+            <input type="number" id="baseTriangulo"> 
+            <input type="number" id="alturaTriangulo"> 
+            <input type="number" id="ladoTriangulo"> 
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el Area</button>
+            <button type="button"onclick="calculperimetroTriangulo()">Calcular el Perimetro</button>
+        </form>
+    </section>
     
+
+
+
+
     <script src="./accion.js"></script>
 </body>
 </html>
