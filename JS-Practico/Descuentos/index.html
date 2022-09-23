@@ -7,8 +7,28 @@
     <title>Descuentos de productos</title>
 </head>
 <body>
-    <h1>Desucentos de productos</h1>
 
+    <header>
+        <h1>Desucentos de productos</h1>
+        <p>Este pestaña sirve esencialmente para sacar calculos de descuentos de precios de cualquier producto</p>
+    </header>
+
+    <section>
+        <h2>Cacula el precio del producto con su descuento</h2>
+        <form action="">
+            <label for="price">Ingresa el precio de tu producto: </label>
+            <input id="price" type="number">
+            <label for="discount">Ingresa el descuento %</label>
+            <input id="discount" type="number">
+            <button  onclick="PriceDiscount()" type="button">Calcular</button>
+
+            <p id="showPrice"></p>
+        </form>
+    </section>
+
+    <footer>
+        Practica de programación en JavaScirpit | Mike Andrade
+    </footer>
     <script src="./accion.js"></script>
 </body>
 </html>
