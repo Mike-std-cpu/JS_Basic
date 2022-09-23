@@ -1,12 +1,9 @@
-const precioInicial = 100;
-const descuento = 15;
 
-const descuentoPrecio = precioInicial - descuento;
-const precioFinalDescuento = (precioInicial * descuento) / 100;
+function calcularPrecioDescuento(precioInicial, descuento){
+    const descuentoPrecio = 100 - descuento;
+    const precioFinalDescuento = (precioInicial * descuentoPrecio) / 100;
 
-console.log({
-precioInicial,
-descuento,
-descuentoPrecio,
-precioFinalDescuento
-});
+    return precioFinalDescuento;
+}
+
+console.log(calcularPrecioDescuento(300,30));
