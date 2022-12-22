@@ -26,7 +26,7 @@ De manera general, podemos describir que JS tiene limitantes con el mero fin de 
 
 Volvemos a confirmar que esto se hace por cuidado del usuario y su información, por ejemplo: _Una página de `http://algunsitio.com`, que el usuario haya abierto, no debe ser capaz de acceder a otra pestaña del navegador con la URL `http://gmail.com` y robar la información de esta otra página._ 🔐
 
-![JS](https://github.com/Mike-std-cpu/JS_Basic/Information/img/JSWEB.jpg)
+![JS](https://raw.githubusercontent.com/Mike-std-cpu/JS_Basic/main/Information/img/JSWEB.jpg)
 
 - JavaScript puede fácilmente comunicarse a través de la red con el servidor de donde la página actual proviene. Pero su capacidad para recibir información de otros sitios y dominios está bloqueada. Aunque sea posible, esto requiere un acuerdo explícito (expresado en los encabezados HTTP) desde el sitio remoto. Una vez más: esto es una limitación de seguridad.
 ![[Pasted image 20221214152300.png]]
